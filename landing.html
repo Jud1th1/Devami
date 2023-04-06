@@ -4,33 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">.
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+   <!-- fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
-<body>
-<div id="black_box">
-    <nav id="nav-bar">
-        <ul>
-            <a href="#">
+<body id="bodyLanding">
+<div id="blackBox" class="grid">
+
+    <!-- Navigation Bar -->
+    <nav id="navBar" class="flex">
+        <ul class="flex">
+            <a class="navLinks" href="#">
                 <li>About</li>
             </a>
-            <a href="#">
+            <a class="navLinks"href="#">
                 <li>Contact</li>
             </a>
-            <a href="#">
+            <a class="navLinks"href="#">
                 <li>Events</li>
             </a>
         </ul>
-        <a class="btn-landing" href="#"><button>Login</button></a>
+    <a href="#"><button class="landingBtn">Login</button></a>
     </nav>
+    <!-- Main Hero Img and Text -->
     <main>
-    <div class="container-fluid col-md-6">
-        <div class="img__landing"></div>
-    </div>
+    <picture class="heroImg">
+        <img class="imgLanding src="/img/devamigirl.png" alt="">
+    </picture>
     <!-- HERO text area -->
-    <div id="landing-logo" class="container-fluid col-md-6"></div>
-        <h1>Individuals Empowered by Technology</h1>
+    <div class="heroText">
+        <img id="logoImg" src="/img/devami-logo.png" alt="">
+    </div>
+        <h1 class="titleLanding">Individuals <span>Empowered</span> by Technology</h1>
         <p>Our platform is build on values of excellence, integrity, and respect. Devami is a place for all developers from many cultural and socialeconomic baclground to feel inspired and motivated.</p>
 
         <div>
@@ -41,9 +50,8 @@
         </div>
 
         <input type="email" name="email" id="email__landing">
-        <a href="#"><button>Explore the tech world</button></a>
+        <a href="#"><button type="submit">Explore the tech world</button></a>
     </main>
     </div>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
