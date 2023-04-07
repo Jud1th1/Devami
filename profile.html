@@ -36,16 +36,19 @@
             <h1>Tiffany Francois</h1>
             <img src="Images/Tiffany.png" alt="profile_img" class="w-50 rounded-circle">
            <div class="icon_buttons">
-            <a href="#" class="link-secondary"><i class="fa-solid fa-heart fa-xl"></i></a>
-            <a href="#" class="link-secondary"><i class="fa-solid fa-message fa-xl"></i></a>
-            <a href="#" class="link-secondary"><i class="fa-solid fa-wifi fa-xl"></i></a>
+            <a href="#" class="link-secondary p-2"><i class="fa-solid fa-heart fa-xl"></i></a>
+            <a href="#" class="link-secondary p-2"><i class="fa-solid fa-message fa-xl"></i></a>
+            <a href="#" class="link-secondary p-2"><i class="fa-solid fa-wifi fa-xl"></i></a>
            </div>
         </div>
         
         <div class="text_wall">
             <h3>Text Wall</h3>
-            <textarea name="" id="" cols="35" rows="4" class="text-box">Write on Tiffany's wall.....</textarea>
-            <!--<button class="btn btn-primary">Add</button>-->
+            <form>
+            <textarea name="" id="" cols="40" rows="4" class="text-box" placeholder="Write on Tiffany's Wall..." required autofocus></textarea>
+            <button type="submit" class="add" onclick="btnFunction()"><i class="fa-solid fa-plus" style="color: #0084ff;"></i></button>
+            </form>
+
         </div>
         
         <div class="profile">
@@ -56,8 +59,8 @@
             
             <div class="languages">
                 <h3>Languages</h3>
-                <ul class="list-group list-group-horizontal" aria-hidden="true"></i>">
-                <li  class="list-group-item border border-secondary rounded bg-secondary text-white">Swift</li>
+                <ul class="list-group list-group-horizontal" aria-hidden="true"></i>
+                <li class="list-group-item border border-secondary rounded bg-secondary text-white">Swift</li>
                 <li class="list-group-item border border-secondary rounded bg-secondary text-white">TypeScript</li>
                 <li class="list-group-item border border-secondary rounded bg-secondary text-white">C++</li>
                 <li class="list-group-item border border-secondary rounded bg-secondary text-white">#C</li>
@@ -100,6 +103,9 @@ integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6
       alert("Linked page under development 😅");
     }
 
+    function btnFunction() {
+      alert("Post submitted for review by user");
+    }
 </script>
 </body>
 </html>

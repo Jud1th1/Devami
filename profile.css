@@ -90,7 +90,7 @@ p {
 
 .icon_buttons{
   text-align: center;
-  padding: 12px 0;
+  padding: 20px 0;
   transition: all 0.3s ease;
   font-size: 20px;
 }
@@ -108,6 +108,25 @@ p {
     border: 2px solid var(--cool-gray);
     border-radius: 3px;
     color: gray;
+}
+
+.add{
+    width: 40px;
+    height: 40px;
+    color: blue;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #0084ff , #776EFD)
+
+    border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+}
+
+.add:hover {
+	background: #DBE7EC;
+	cursor: pointer;
+    border-color: rgb(59,89,152);
+    filter: drop-shadow(0px 4px 4px rgba(234, 30, 177, 0.25));
 }
 
 /*Profile section- profile about area*/
