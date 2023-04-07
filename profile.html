@@ -4,58 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8bc929afbc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="profile.css">
     <title>Profile</title>
     <link rel="icon" href="">
 </head>
 <body>
     
+    <!--Placeholder NavBars (TO BE REPLACED/DELETED LATER!!!!)-->
+    <header>
+        <div class="topnav">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <div class="sidenav">
+            <ul>
+                <li></li>
+              </ul>
+        </div>
+    </header>
+
+
     <div class="container">
-        <div class="profile_img">
+        <div class="profile_area">
             <h1>Tiffany Francois</h1>
-            <!--JS for image profile, do we have a server? or is this a dummy images-->
-            <button class="likes"></button>
-            <button class="messages"></button>
-            <button class="connections"></button>
+            <img src="Images/Tiffany.png" alt="profile_img" class="w-50 rounded-circle">
+           <div class="icon_buttons">
+            <a href="#" class="link-secondary"><i class="fa-solid fa-heart fa-xl"></i></a>
+            <a href="#" class="link-secondary"><i class="fa-solid fa-message fa-xl"></i></a>
+            <a href="#" class="link-secondary"><i class="fa-solid fa-wifi fa-xl"></i></a>
+           </div>
         </div>
         
         <div class="text_wall">
             <h3>Text Wall</h3>
-            <input type="text" id="myText" value="Write on Tiffany's Wall...">
-            <button class="add"></button>
+            <textarea name="" id="" cols="35" rows="4" class="text-box">Write on Tiffany's wall.....</textarea>
+            <!--<button class="btn btn-primary">Add</button>-->
         </div>
         
         <div class="profile">
             <div class="profile_welcometxt">
                 <h2>Hello World,</h2>
                 <p>Irina here from the southern state of Georgia. Recent grad student and back-end developer.</p>
-            </div>
+            
             
             <div class="languages">
                 <h3>Languages</h3>
-                <h4>Swift</h4>
-                <h4>TypeScript</h4>
-                <h4>C++</h4>
-                <h4>#C</h4>
+                <ul class="list-group list-group-horizontal" aria-hidden="true"></i>">
+                <li  class="list-group-item border border-secondary rounded bg-secondary text-white">Swift</li>
+                <li class="list-group-item border border-secondary rounded bg-secondary text-white">TypeScript</li>
+                <li class="list-group-item border border-secondary rounded bg-secondary text-white">C++</li>
+                <li class="list-group-item border border-secondary rounded bg-secondary text-white">#C</li>
+                </ul>
             </div>
+        </div>
         </div>
     
-        <div class="inner_container">
-            <div class="topics">
-                <h2>Liked Topics</h2>
-                <h4>#MichiganTechGirls</h4>
-                <h4>#UX</h4>
-                <h4>#backEndDevelopment</h4>
-                <h4>#NewDev</h4>
-            </div>
+       
+        <div class="topics">
+            <h2>Liked Topics</h2>
+            <button class="liked_topicsbtn" onclick="myFunction()">#MichiganTechGirls</button>
+            <button class="liked_topicsbtn" onclick="myFunction()">#UX</button>
+            <button class="liked_topicsbtn" onclick="myFunction()">#backEndDevelopment</button>
+            <button class="liked_topicsbtn" onclick="myFunction()">#NewDev</button>
+        </div>
 
-            <div class="squad">
-                <h2>Squad Network</h2>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+        <div class="squad">
+            <h2>Squad Network</h2>
+            <div class="squad_imgs">
+            <img src="Images/barbsmith.jpg" alt="barb smith" class="img1">
+            <img src="Images/alexromanoff.jpg" alt="alex" class="img1">
+            <img src="Images/annerice.jpg" alt="anne" class="img1">
             </div>
         </div>
+        
     </div>
 
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+</script>
+
+<script>
+    function myFunction() {
+      alert("Linked page under development 😅");
+    }
+
+</script>
 </body>
 </html>
+
+

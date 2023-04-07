@@ -1,0 +1,16 @@
+*{
+    margin:0;
+}
+
+:root {
+    --anti-flash-white: #EDF2F4;
+    --seasalt: #f8f9fa;
+    --azure: #0084ff;
+    --tropical-indigo: #A89BFE;
+    --medium-slate-blue: #776EFD;
+    --raisin-black: #25282d;
+    --cool-gray: #8D99AE;
+
+    --primary-text: 'Poppins', sans-serif;
+    --secondary-text: 'PT Sans', sans-serif;
+}
