@@ -136,7 +136,8 @@ main {
   padding: 0;
   margin: 0;
 }
-.black .heroImg {
+
+.heroImg {
   grid-area: 1/1/2/2;
   -o-object-fit: cover;
      object-fit: cover;
@@ -144,39 +145,41 @@ main {
   height: 100%;
   align-self: flex-end;
 }
-.black .heroText {
+
+.heroText {
   grid-area: 1/2/2/3;
 }
-.black .heroText h1 {
+.heroText h1 {
   width: 75%;
 }
-.black .heroText .container-right {
+.heroText .container-right {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 0.5rem;
 }
-.black .heroText span {
+.heroText span {
   color: #BFC297;
 }
-.black .heroText .feature {
+.heroText .feature {
   margin: 1.5rem 0;
   flex-direction: column;
 }
-.black .heroText .item {
+.heroText .item {
   background-image: url(/img/checkmark.png);
   width: 37px;
   height: 37px;
   margin-right: 1rem;
 }
-.black .heroText .item-wrap {
+.heroText .item-wrap {
   margin-bottom: 0.5rem;
 }
-.black .heroText .email-wrap {
+
+.email-wrap {
   margin: 5rem 0;
 }
-.black .heroText .email-wrap .btn {
+.email-wrap .btn {
   box-sizing: border-box;
   width: 16rem;
   height: 3.875rem;
@@ -186,7 +189,7 @@ main {
   color: #F8F9FA;
   margin: 0 2.875rem;
 }
-.black .heroText .email-wrap input {
+.email-wrap input {
   width: 16rem;
 }
 
@@ -224,36 +227,64 @@ main {
 @media (max-width: 20em) {
   body {
     background: #25282d;
-    font-size: 12px;
-    padding: 0;
+    font-size: 10px;
+    padding: 2rem;
   }
   #blackBox,
   .container {
-    width: 320px;
+    width: 100%;
     height: 100%;
-    display: flex;
+    display: unset;
   }
-  .heroImg {
-    display: none;
+  .container {
+    width: 320px;
+    margin: 0;
   }
-  .container-right {
+  .container .container-right {
+    margin: 0;
+    padding: 0;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    width: 400px;
+    text-align: center;
   }
-  .container-right #logoImg {
+  .container .container-right #logoImg {
     max-width: 250px;
+  }
+  .container .container-right .heroText {
+    display: flex;
+    align-items: center;
+  }
+  .container .container-right .heroText p {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .container .heroImg {
+    display: none;
+  }
+  .email-wrap {
+    display: unset;
+    width: 50%;
+    margin: 2.5rem;
+  }
+  .email-wrap input {
+    width: 170px;
+  }
+  .email-wrap .btn {
+    width: 170px;
+    margin: 1rem 0;
   }
   #navBar {
     display: flex;
-    margin-top: 50px;
+    margin-top: 1rem;
     box-shadow: none;
+    align-items: center;
   }
   #navBar li {
-    padding: 2px 0.5rem;
+    padding: 0.25rem 1rem;
   }
   #navBar .btn {
-    margin: 15px 0;
+    width: 120px;
+    height: 45px;
+    margin: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
