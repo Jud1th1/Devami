@@ -1,4 +1,5 @@
 @import "reset";
+@import "profile";
 
 // ---------------- variables
 // colors
@@ -30,6 +31,7 @@ body {
     color: $bodyColor;
     padding: 2rem;
     background: linear-gradient(87.97deg, rgba(0, 132, 255, 0.5) 1.71%, rgba(168, 155, 254, 0.5) 56.98%);
+    background-size: cover;
     font-family: 'poppins', sans-serif;
 }
 
@@ -37,6 +39,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: $bgColor;
+    border-radius: 0 0 8px 8px;
 }
 
 .container {
@@ -44,6 +47,7 @@ body {
     width: 100%;
     height: 100%; 
     flex-direction: column;
+    border-radius: 8px;
 }
 
 main {
@@ -55,11 +59,12 @@ main {
 /* --------- Navigation */ 
 
 #navBar {
+    border-radius: 8px;
     justify-content: flex-end;
+    height: 64.45px;
     margin: 0;
     padding: 0.5rem;
     background-color: $bgColor;
-    box-shadow: 0 0 5px black;
     align-items: center;
 
     ul {
@@ -68,6 +73,7 @@ main {
     }
     li {
         padding: 5px 2.75rem;
+
         
     }
     .navLinks {
@@ -85,11 +91,13 @@ main {
     .btn {
         box-sizing: border-box;
         width: 142.32px;
-        height: 64.45px;
+        height: 44.45px;
         background: $bgColor;
         border: 3px solid $bodyColor;
         border-radius: 15px;
         color: $navColor;
+        margin-right: 1rem;
+        box-shadow: rgba(181, 180, 182, 0.299) 0px 2px 8px;
     }
 }
 
@@ -171,29 +179,58 @@ main {
                     border-radius: 15px;
                     color: $navColor;
                     margin: 0 2.875rem;
+                    box-shadow: rgba(181, 180, 182, 0.299) 0px 2px 8px;
                 }
                 input {
                     width: 16rem;
-
                 }
             }
 
 /*---------- MEDIA QUERIES*/
+@media screen and (max-width:81.25em) {
+    .heroText {
+       width: 85%;
+            h1 {
+                width: 85%;
+            }
+
+        .container-right {
+            margin: 1rem;
+            }
+        .feature {
+            margin:  1.5rem 0;
+            }
+            .item {
+            margin-right: 1rem;
+            }
+            .item-wrap {
+                margin-bottom: 0.7rem;
+    
+            }
+       
+
+
+.email-wrap {  
+    margin: 3rem 0;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    .btn {
+        margin-top: 3rem;
+    }
+    input {
+        width: 13.5rem;
+    }
+        }
+    }
+}
+
+
 @media screen and (max-width:51.25em) {
     body {
         padding: 1rem;
         background: $bgColor;
     }
-    
-    // #blackBox {
-    // }
-    
-    // .container {
-       
-    // }
-    
-    // main {
-    // }
     
     
     // navigation styling MQ screen size-Lg
@@ -203,17 +240,11 @@ main {
         justify-content: center;
         background-color: $bgColor;
         box-shadow: none;
-    
-        // ul {
 
-        // }
-        // li {
-            
-        // }
-        // .navLinks {
-        // }
         .btn {
             box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+            width: 7rem;
+            margin-right: 2rem;
         }
     }
     // grid MQ screen size-LG
@@ -223,56 +254,54 @@ main {
         }
         .heroImg {
             box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+            border-radius: 8px;
         }
     
         //  heroText flex
         .heroText {
+            align-items: center;
             margin: 0;
                 h1 {
                     width: 100%;
                 }
                 p {
-                    width: 75%;
+                    width: 100%;
                     margin: 0.5rem 0;
                 }
     
             .container-right {
+                align-items: center;
                 padding: 1rem;
                 }
-            // span {
-            //     color: #BFC297;
-            //     }
             .feature {
                 margin-top: 3rem;
                 flex-direction: column;
-                margin-bottom: 0;
+                align-self: flex-start;
                 }
                 .item {
                 background-size: cover;
-                width: 32px;
-                height: 32px;
-                margin-right: 0.25rem;
-                margin-bottom: 0;
+                width: 25px;
+                height: 25px;
+                padding: 0;
+                margin: 5px;
                 }
                 .item-wrap {
                     margin-bottom: 2rem;   
                 }
-    
+}    
             
-            }
-        .email-wrap {  
+            
+            .email-wrap {  
                     margin: 2.875rem 0 5rem;
     
                     .btn {
-
-                        width: 13rem;
-                        height: 3.25rem;
+                        width: 14rem;
+                        height: 3rem;
                         margin: 0 2.875rem;
                     }
                     input {
                         width: 12rem;
-                        height: 3rem;
-    
+                        height: 2.5rem;
                     }
                 }
     // end of MQ 51.25em
@@ -301,6 +330,9 @@ main {
         }
         .btn {
             box-shadow: 0 0 5px $navColor;
+            margin-right: 1rem;
+            height: 1.875rem;
+            width: 5rem;
         }
    
     
@@ -330,21 +362,17 @@ main {
             
             }
         .email-wrap {  
-                    margin: 5rem 0;
+                    margin: 1rem;
     
                     .btn {
-                        box-sizing: border-box;
                         width: 16rem;
-                        height: 3.875rem;
-                        background: $bgColor;
-                        border: 3px solid $bodyColor;
-                        border-radius: 15px;
-                        color: $navColor;
+                        height: 2.5rem;
                         margin: 0 2.875rem;
+                        margin: 2.5rem;
                     }
                     input {
-                        width: 16rem;
-    
+                        width: 14rem;
+                        height: 2.5rem;
                     }
                 }
             }
@@ -366,15 +394,15 @@ main {
         display: unset;
         }
     .container {
-        width:320px;
+        width:100%;
         margin: 0;
 
     .container-right {
      margin: 0;
      padding: 0;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 
         #logoImg {
             max-width: 250px;
@@ -383,7 +411,6 @@ main {
         .heroText {
             display: flex;
             align-items: center;
-}        
 
 }
     .heroImg {
@@ -393,21 +420,21 @@ main {
 
 
 .email-wrap {
-            display: unset;
-            margin: 2.5rem;
+            margin: 0rem;
+
             input {
-                width: 170px;
+                width: 10rem;
+                height: 1.875rem;
             }
             .btn {
-                width: 170px;
-                height: 2.78rem;
-                margin: 1rem 0;
-                box-shadow: rgba(181, 180, 182, 0.299) 0px 2px 8px;
+                width: 12rem;
+                height: 1.875rem;
+                margin: 2rem;
             }
         } 
+}
     #navBar {
         display: flex;
-        margin-top: 1rem;
         box-shadow: none;
         align-items: center;
 
@@ -419,7 +446,7 @@ main {
         }
         .btn {
             width: 6rem;
-            height: 2.5rem;
+            height: 1.875rem;
             margin: 10px;
             box-shadow: rgba(181, 180, 182, 0.299) 0px 2px 8px;
         }
