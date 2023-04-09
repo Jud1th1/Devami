@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --anti-flash-white: #EDF2F4;
+    --seasalt: #f8f9fa;
+    --azure: #0084ff;
+    --tropical-indigo: #A89BFE;
+    --medium-slate-blue: #776EFD;
+    --raisin-black: #25282d;
+    --cool-gray: #8D99AE;
+    --gradient: linear-gradient(to right, #0084ff , #776EFD);
+
+
+    --primary-text: 'Poppins', sans-serif;
+    --secondary-text: 'PT Sans', sans-serif;
+}
+
+body {
+    background-color: var(--anti-flash-white);
+    font-family: var(--primary-text);
+    color: var(--raisin-black);
+}
+
+h1{
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--azure);
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 1.3em;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* temporary Nav*/
+
+.topnav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  height: 83.84px;
+}
+
+.sidenav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 118px;
+  background-color: #333;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+}
+
+
+/*Feed CSS starts here*/
+
+.parent_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+
+    background-color: var(--seasalt);
+    border: solid 2px var(--cool-gray);
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    margin: 15px 30px 0 600px;
+}
+
+.feed_card {
+    margin: 2em 5em;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0 ,0, 0.3);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img{
+    border-radius: 50%;
+    width: 70px;
+}
+
+.likes {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+    font-size: 14px;
+    color: gray;
+}
+
+button {
+    display: inline-block;
+    margin: 5px;  
+}
+
+/*Individual CSS*/
+.user1{
+    border: 3px solid #776EFD;
+}
+
+.article_image{
+    background-image: url(Images/fatiguearticle.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.article_title{
+    color: rgb(46, 207, 154);
+    position: absolute;
+    top: 350px;
+    left: 140px;
+    font-size: 50px;
+}
+
+.user2{
+    border: 3px solid #A89BFE;
+}
+
+.user3{
+    border: 3px solid #0084FF;
+}
+
+.user4{
+    border: 3px solid #776EFD;
+}
+
+.user5{
+    border: 3px solid #A89BFE;
+}
+
+.user6{
+    border: 3px solid #0084FF;
+}
+
+

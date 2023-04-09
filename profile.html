@@ -44,11 +44,8 @@
         
         <div class="text_wall">
             <h3>Text Wall</h3>
-            <form>
-            <textarea name="" id="" cols="40" rows="4" class="text-box" placeholder="Write on Tiffany's Wall..." required autofocus></textarea>
+            <textarea name="" id="ustext" cols="40" rows="4" class="text-box" placeholder="Write on Tiffany's Wall..." required autofocus></textarea>
             <button type="submit" class="add" onclick="btnFunction()"><i class="fa-solid fa-plus" style="color: #0084ff;"></i></button>
-            </form>
-
         </div>
         
         <div class="profile">
@@ -81,9 +78,9 @@
         <div class="squad">
             <h2>Squad Network</h2>
             <div class="squad_imgs">
-            <img src="Images/barbsmith.jpg" alt="barb smith" class="img1">
-            <img src="Images/alexromanoff.jpg" alt="alex" class="img1">
-            <img src="Images/annerice.jpg" alt="anne" class="img1">
+            <img src="Images/4.png" alt="barb smith" class="img1">
+            <img src="Images/3.png" alt="alex" class="img1">
+            <img src="Images/2.png" alt="anne" class="img1">
             </div>
         </div>
         
@@ -104,7 +101,16 @@ integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6
     }
 
     function btnFunction() {
-      alert("Post submitted for review by user");
+      var usertext = document.getElementById("ustext").value
+
+      if(usertext == "")
+      {
+        alert("Don't forget to write your message!")
+      }
+
+      else{
+        alert ("Thanks! Your post is submitted for review")
+      }
     }
 </script>
 </body>
