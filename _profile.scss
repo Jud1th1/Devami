@@ -28,7 +28,7 @@ color: $colorBlack;
     display: flex;
     align-items: center;
     margin-left: 2rem;
-    padding: 10px;
+    padding: 20px;
 }
 
 .post-header {
@@ -112,7 +112,7 @@ span {
 //   post footer
 
 .post-footer {
-
+    align-content: flex-end;
 }
 
   .btn-like,
