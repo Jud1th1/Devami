@@ -75,7 +75,7 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   margin-left: 2rem;
-  padding: 10px;
+  padding: 20px;
 }
 
 .post-header {
@@ -143,6 +143,10 @@ span {
 .carousel-next {
   right: 0;
   color: black;
+}
+
+.post-footer {
+  align-content: flex-end;
 }
 
 .btn-like,

@@ -4,7 +4,7 @@
 
 # Devami   
 
-Devami is a web app created for software developers in all stages to connect, network and show of their skills.
+Devami is a web app created for software developers in all stages to connect, network and show of000000f their skills.
 
 
 ## Authors
@@ -27,11 +27,12 @@ Devami is a web app created for software developers in all stages to connect, ne
 
 * [@genesis] I've learn the importance of creating any web page as a mobile first design because if you fail to do so you will waste time on media queries and having to adjust part of your website. My biggest struggle was the carousel and it's funtionality. 
 
-* [@judith]
+* [@judith] My win was figuring out the like count and having it be triggered by my button while displaying on the post- success!
+Struggle: Trying to use JS period. Especially with the sort filter.
 
-* [@marian]
+* [@marian] My win for me was working with the grid container getting it to work. My struggle was understanding media query to make my assignment responsive.
 
-* [@patience]
+* [@patience] One of my struggles was the media query because I had a hard time understanding the dimensions and how to traslate that into the making my navigation fully responsive. My win was the side navigation being able to complete it.
 
 
 
