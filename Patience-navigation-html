@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Miss Coding</title>
+</head>
+
+
+<body>
+  <div class="topnav">
+    <strong><a href="#home">Devami</a></strong>
+    <a href="#news">Messages</a>
+    <div class="search"><input type="text" placeholder="Search"></div>
+  </div>
+
+  <nav class="side-nav" class="nav-item">
+    <ul>
+      
+      <li>
+        <img src="logo.devami.png" class="logo">
+      </li>
+      <li>
+        <li><a href="#"></a></li>
+        <img src="alexromanoff.jpg" class="avatar">
+      </li>
+      <li><a href="#"></a></li>
+       <img src="events-icon.png">
+      <li><a href="#"></a></li>
+       <img src="group-icon.png">
+      <li><a href="#"></a></li>
+       <img src="info-icon.png">
+      <li><a href="#"></a></li>
+       <img src="Live-icon.png">
+      <li><a href="#"></a></li>
+       <img src="mentorship-icon.png">
+      <li><a href="#"></a></li>
+       <img src="phone-iconf3dicon.png">
+      <li><a href="#"></a></li>
+       <img src="shopping-iconf3dicon.png">
+    </ul>
+  </nav>
+
+    
+</body>
+</html>
