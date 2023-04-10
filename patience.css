@@ -59,11 +59,8 @@ body {
 
 .logo {
   text-align: center;
-  display: flex;
-  transition: all 0.5s ease;
-}
-
-.logo img {
+  /* display: flex; */
+  /* transition: all 0.5s ease; */
   width: 15px;
   height: 5px;
   border-radius: 50%;
@@ -100,7 +97,8 @@ a:hover {
   background: #A89BFE;
 }
 
-.avatar {
+.avatar,
+.icons {
   width: 60px;
   height: 60px;
   border-radius: 50%;
