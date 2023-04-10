@@ -1,0 +1,324 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --anti-flash-white: #EDF2F4;
+    --seasalt: #f8f9fa;
+    --azure: #0084ff;
+    --tropical-indigo: #A89BFE;
+    --medium-slate-blue: #776EFD;
+    --raisin-black: #25282d;
+    --cool-gray: #8D99AE;
+    --gradient: linear-gradient(to right, #0084ff , #776EFD);
+
+
+    --primary-text: 'Poppins', sans-serif;
+    --secondary-text: 'PT Sans', sans-serif;
+}
+
+body {
+    background-color: var(--anti-flash-white);
+    font-family: var(--primary-text);
+    color: var(--raisin-black);
+}
+
+h1{
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--azure);
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 1.3em;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* temporary Nav*/
+
+.topnav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  height: 83.84px;
+}
+
+.sidenav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 118px;
+  background-color: #333;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: minmax(150px, 25%) 1fr;
+    margin: 15px 30px 0 150px;
+    gap: 2em;
+}
+
+/*Post CSS starts here*/
+.left_container {
+    display: flexbox;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    height: fit-content;
+    padding-left: 3em;
+    padding-top: 1em;
+    padding-bottom: 5em;
+    padding-right: 3em;
+
+    background-color: var(--seasalt);
+    border: solid 2px var(--cool-gray);
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+}
+
+.time{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--azure);
+}
+
+.profile_picture{
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 25%;
+    margin: 1em;
+}
+
+.myName{
+    color: var(--medium-slate-blue);
+    padding-bottom: 8%;
+}
+
+
+.text-postbox{
+    border: 3px solid var(--tropical-indigo);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.add{
+    width: 40px;
+    height: 40px;
+    color: blue;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #0084ff , #776EFD)
+
+    border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+}
+
+.add:hover {
+	background: #DBE7EC;
+	cursor: pointer;
+    border-color: rgb(59,89,152);
+    filter: drop-shadow(0px 4px 4px rgba(234, 30, 177, 0.25));
+}
+
+/*Feed CSS starts here*/
+
+
+.right_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+    max-width: fit-content;
+
+    background-color: var(--seasalt);
+    border: solid 2px var(--cool-gray);
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+}
+
+.welcome_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 4em 0 3em;
+}
+
+#myInput {
+    border: 0;
+    border-radius: 0;
+    background: #f1f1f1;}
+
+.feed_card {
+    margin: 2em 5em;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0 ,0, 0.3);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img{
+    border-radius: 50%;
+    width: 70px;
+}
+
+.likes {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+    font-size: 14px;
+    color: gray;
+}
+
+.feed_buttons {
+    display: inline-block;
+    margin: 5px; 
+}
+
+.mybutton {
+    width: 138px;
+    height: 32px;
+    border-image: linear-gradient(45deg,#0084FF,#958AF2) 10;
+}
+
+
+.mybutton:hover{
+    background-color: #b5bdca;
+    border-image: linear-gradient(45deg,#0084FF,#958AF2) 10;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--seasalt);
+}
+
+.links{
+    color: #8D99AD;
+    text-decoration: underline;
+}
+
+.links:hover{
+    color: var(--tropical-indigo);
+}
+
+.links:active{
+    color: var(--medium-slate-blue);
+}
+
+
+
+/*Individual CSS*/
+.user1{
+    border: 3px solid #776EFD;
+}
+
+.article_image{
+    background-image: url(Images/fatigue.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.user2{
+    border: 3px solid #A89BFE;
+}
+
+.user3{
+    border: 3px solid #0084FF;
+}
+
+.user4{
+    border: 3px solid #776EFD;
+}
+
+.article_image2{
+    background-image: url(Images/ChatGPT_article.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.article_title2{
+    color: #89b888;
+    font-size: 50px;
+}
+
+.user5{
+    border: 3px solid #A89BFE;
+}
+
+.user6{
+    border: 3px solid #0084FF;
+}
+
+
+/* Media Queries*/
+/* Medium Screens (Tablets)*/
+@media screen and (max-width:1000px){
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+        margin: 5%;
+        justify-content: center;
+        margin: 15px 30px 0 150px;
+        gap: 2em;
+    }
+
+    .button_move{
+        text-align: right;
+    }
+
+    
+}
+ 
+
+/* Small Screens (Mobile)*/
+@media screen and (max-width:600px){
+    .sidenav {display: none;}
+
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+        margin: 5%;
+        justify-content: center;
+    }
+
+    .left_container{
+        margin: 0%;
+    }
+
+    .button_move{
+        text-align: right;
+    }
+
+    .dropdown{
+        padding-top: 1em;
+    }
+
+    .likes{
+        display: unset;
+        line-height: 2%;
+    }
+
+    .comments{
+        padding-left: 1em;
+    }
+
+    .feed_buttons{
+        text-align: center;
+    }
+}
