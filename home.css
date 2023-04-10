@@ -83,6 +83,7 @@ p {
     padding-left: 3em;
     padding-top: 1em;
     padding-bottom: 5em;
+    padding-right: 3em;
 
     background-color: var(--seasalt);
     border: solid 2px var(--cool-gray);
@@ -108,9 +109,11 @@ p {
     padding-bottom: 8%;
 }
 
+
 .text-postbox{
     border: 3px solid var(--tropical-indigo);
     border-radius: 5px;
+    width: 100%;
 }
 
 .add{
@@ -133,12 +136,7 @@ p {
 }
 
 /*Feed CSS starts here*/
-#myInput {
-    padding: 20px;
-    margin-top: -6px;
-    border: 0;
-    border-radius: 0;
-    background: #f1f1f1;}
+
 
 .right_container {
     display: grid;
@@ -151,6 +149,18 @@ p {
     border-radius: 8px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
 }
+
+.welcome_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 4em 0 3em;
+}
+
+#myInput {
+    border: 0;
+    border-radius: 0;
+    background: #f1f1f1;}
 
 .feed_card {
     margin: 2em 5em;
@@ -259,12 +269,20 @@ p {
 /* Media Queries*/
 /* Medium Screens (Tablets)*/
 @media screen and (max-width:1000px){
-    .left_container {
+    .parent {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(auto, 1fr);
         margin: 5%;
         justify-content: center;
+        margin: 15px 30px 0 150px;
+        gap: 2em;
     }
+
+    .button_move{
+        text-align: right;
+    }
+
+    
 }
  
 
@@ -272,10 +290,35 @@ p {
 @media screen and (max-width:600px){
     .sidenav {display: none;}
 
-    .left_container {
+    .parent {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(auto, 1fr);
         margin: 5%;
         justify-content: center;
+    }
+
+    .left_container{
+        margin: 0%;
+    }
+
+    .button_move{
+        text-align: right;
+    }
+
+    .dropdown{
+        padding-top: 1em;
+    }
+
+    .likes{
+        display: unset;
+        line-height: 2%;
+    }
+
+    .comments{
+        padding-left: 1em;
+    }
+
+    .feed_buttons{
+        text-align: center;
     }
 }
