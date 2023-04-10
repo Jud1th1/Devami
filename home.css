@@ -67,19 +67,89 @@ p {
   position: fixed;
 }
 
-
-/*Feed CSS starts here*/
-
-.parent_container {
+.parent{
     display: grid;
+    grid-template-columns: minmax(150px, 25%) 1fr;
+    margin: 15px 30px 0 150px;
+    gap: 2em;
+}
+
+/*Post CSS starts here*/
+.left_container {
+    display: flexbox;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto, 1fr);
+    max-width: 100%;
+    height: fit-content;
+    padding-left: 3em;
+    padding-top: 1em;
+    padding-bottom: 5em;
 
     background-color: var(--seasalt);
     border: solid 2px var(--cool-gray);
     border-radius: 8px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
-    margin: 15px 30px 0 600px;
+}
+
+.time{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--azure);
+}
+
+.profile_picture{
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 25%;
+    margin: 1em;
+}
+
+.myName{
+    color: var(--medium-slate-blue);
+    padding-bottom: 8%;
+}
+
+.text-postbox{
+    border: 3px solid var(--tropical-indigo);
+    border-radius: 5px;
+}
+
+.add{
+    width: 40px;
+    height: 40px;
+    color: blue;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #0084ff , #776EFD)
+
+    border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+}
+
+.add:hover {
+	background: #DBE7EC;
+	cursor: pointer;
+    border-color: rgb(59,89,152);
+    filter: drop-shadow(0px 4px 4px rgba(234, 30, 177, 0.25));
+}
+
+/*Feed CSS starts here*/
+#myInput {
+    padding: 20px;
+    margin-top: -6px;
+    border: 0;
+    border-radius: 0;
+    background: #f1f1f1;}
+
+.right_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+    max-width: fit-content;
+
+    background-color: var(--seasalt);
+    border: solid 2px var(--cool-gray);
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
 }
 
 .feed_card {
@@ -126,6 +196,20 @@ p {
     color: var(--seasalt);
 }
 
+.links{
+    color: #8D99AD;
+    text-decoration: underline;
+}
+
+.links:hover{
+    color: var(--tropical-indigo);
+}
+
+.links:active{
+    color: var(--medium-slate-blue);
+}
+
+
 
 /*Individual CSS*/
 .user1{
@@ -133,17 +217,10 @@ p {
 }
 
 .article_image{
-    background-image: url(Images/fatiguearticle.jpg);
+    background-image: url(Images/fatigue.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 250px;
-}
-
-.article_title{
-    color: rgb(46, 207, 154);
-    top: 350px;
-    left: 140px;
-    font-size: 50px;
 }
 
 .user2{
@@ -158,6 +235,18 @@ p {
     border: 3px solid #776EFD;
 }
 
+.article_image2{
+    background-image: url(Images/ChatGPT_article.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.article_title2{
+    color: #89b888;
+    font-size: 50px;
+}
+
 .user5{
     border: 3px solid #A89BFE;
 }
@@ -167,3 +256,26 @@ p {
 }
 
 
+/* Media Queries*/
+/* Medium Screens (Tablets)*/
+@media screen and (max-width:1000px){
+    .left_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+        margin: 5%;
+        justify-content: center;
+    }
+}
+ 
+
+/* Small Screens (Mobile)*/
+@media screen and (max-width:600px){
+    .sidenav {display: none;}
+
+    .left_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+        margin: 5%;
+        justify-content: center;
+    }
+}

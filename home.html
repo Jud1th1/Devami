@@ -30,10 +30,32 @@
         </div>
     </header>
 
+    <main class="parent">
+    <!--Right Side container-->
+    <section class="left_container">
+      <div id="myTime" class="time"></div>
+      <img src="Images/Tiffany.png" alt="Tiffany" class="profile_picture">
+      <div class="myName">
+        <h2>Tiffany Francois</h2>
+        <h3>Front End Developer</h3>
+      </div>
+      <div class="text_wall">
+        <h3>Let's Post Something!</h3>
+        <textarea name="" id="ustext" cols="35" rows="10" class="text-postbox" placeholder="Write a post..." required autofocus></textarea>
+        <button type="submit" class="add" onclick="btnFunction()"><i class="fa-solid fa-plus" style="color: #0084ff;"></i></button>
+    </div>
+    </section> 
 
-    <main class="parent_container">
 
-        <h1>What's on Dev today?</h1>
+    <!--Left Side container-->
+    <section class="right_container">
+        <h1 class="p-2">What's on Dev today?</h1>
+        <div class="dropdown">
+          <select name="sort" id="js-sort-by">Sort By</select>
+          <option value="index"></option>
+          <option value="name"></option>
+        </div>
+
 
         <!------------First Post------------>
 
@@ -52,9 +74,7 @@
                 <h3 class="text-end text-primary">Now</h3>
             </div>
            
-              <div class="article_image">
-                <h1 class="article_title">How to deal with Fatigue</h2>
-              </div>
+              <div class="article_image"><a href="#"></a></div>
               <p class="p-1">Hey guys, check out this article about Tech fatigue! We all go through it, don’t 
                 forget to take care of yourself and take breaks!</p>
             <div class="likes">
@@ -87,7 +107,7 @@
             </div>
         
               <p class="p-1">I did something cool today, check out this link!</p>
-              <p class="p-1">www.coollinkhere.com </p>
+              <p class="p-1"><a href="#" class="links">www.coollinkhere.com </a></p>
 
               <div class="likes">
                 <p><i class="fa-solid fa-heart"></i> 108 likes</p>
@@ -120,7 +140,7 @@
         
               <p class="p-1">Hey Tampa AMIs! Join us this Friday at Armature Works for social hour, we’re going to be 
                 there from 4pm - 9pm. Come meet new people and learn about the industry!</p>
-              <p class="p-1">See you there! More Info here</p>
+              <p class="p-1">See you there! More Info<a href="#" class="links"> here.</a></p>
 
               <div class="likes">
                 <p><i class="fa-solid fa-heart"></i> 200 likes</p>
@@ -147,9 +167,10 @@
             </div>
 
             <div>
-                <h3 class="text-end text-primary">4d ago</h3>
+              <h3 class="text-end text-primary">4d ago</h3>
             </div>
-        
+
+              <div class="article_image2"><a href="#"></a></div>
               <p class="p-1">Passing this along from last Thursday’s meetup. This was brought up during panel discussions and this article may help shed some light and provide reassurance.</p>
 
               <div class="likes">
@@ -214,7 +235,7 @@
         
               <p class="p-1">Check out this website my team and I developed for Willow’s Soups. App coming soon
                 Click the link below:</p>
-              <p class="p-1">Willows-soups</p>
+              <p class="p-1"><a href="#" class="links"> Willows-soups</a></p>
 
               <div class="likes">
                 <p id="carrier"><i class="fa-solid fa-heart"></i> 800 likes</p>
@@ -231,9 +252,58 @@
             <div class="text-center">
               <button type="button" class="btn btn-light btn-outline-secondary">See More</button>
             </div>
-    </main>
+          </section>
+        </main>
 
 <script>
+
+  /*Date & Time*/
+  function showDateTime() {
+  var myTime = document.getElementById("myTime");
+
+  var date = new Date();
+  var dayList = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  var monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+  var dayName = dayList[date.getDay()];
+  var monthName = monthNames[date.getMonth()];
+  var today = `${dayName}, ${monthName} ${date.getDate()}, ${date.getFullYear()}`;
+
+  /*Time not needed, but save for reference
+  var hour = date.getHours();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+
+  var time = hour + ":" + min + ":" + sec;*/
+  myTime.innerText = `${today}`;
+}
+setInterval(showDateTime, 1000);
+
+/* Text box for post*/
+  function btnFunction() {
+      var usertext = document.getElementById("ustext").value
+
+      if(usertext == "")
+      {
+        alert("Don't forget to share something awesome!")
+      }
+
+      else{
+        alert ("Post Submitted! 😜")
+      }
+    }
 
   /*Only assigned to User6*/
   var count = (function () {
@@ -247,7 +317,8 @@
     document.getElementById("button").disabled = true;
    }
 
-
+  /*dropdown button*/
+   
 
 </script>
 
