@@ -265,6 +265,14 @@ p {
         text-align: right;
     }
 
+    .article_image{
+        background-image: url("/Images/fatigue2\(medium\).png");
+    }
+
+    .article_image2{
+        background-color: url("/Images/chaptgpt2\(medium\).png");
+    }
+
     
 }
  
@@ -310,7 +318,7 @@ p {
     }
 
     .article_image2{
-        background-color: url("/Images/");
+        background-color: url("/Images/Chaptgptmobile.png");
     }
 }
 
