@@ -324,6 +324,7 @@ p {
     background: linear-gradient(90deg, #0084ff 17.54%, #a89bfe 85.07%);
     border-radius: 15px;
     border: none;
+    font-weight: 700;
   }
   
   .Mentor-image {
@@ -360,6 +361,12 @@ p {
 
 /* Media Query*/
     @media screen and (max-width:800px){
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
         .sidenav {display: none;}
 
         .container{
@@ -391,6 +398,7 @@ p {
       display: flex;
       flex-direction: column;
       width: 80%;
+      align-content: center;
     }
     .projects {
       display: unset;
