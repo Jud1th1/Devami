@@ -280,13 +280,13 @@ p {
   }
   
   .project-A {
-    background-image:
+    background-image: url("/Images/Login\ Page.png");
     background-size: cover;
     height: 350px;
   }
   
   .project-B {
-    background-image: 
+    background-image:  url("/Images/Welcome\ Page.png");
     background-size: cover;
     height: 350px;
   }
@@ -311,7 +311,7 @@ p {
     color: #25282d;
   }
   
-  h2 {
+  .item2 h2 {
     font-weight: 600;
     font-size: 29px;
   }
@@ -343,7 +343,7 @@ p {
     width: 250px;
   }
   
-  p {
+  .visual p {
     width: 232px;
     height: 28px;
     font-family: "Poppins";
