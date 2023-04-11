@@ -45,27 +45,6 @@ p {
     font-family: 'PT Sans', sans-serif;
 }
 
-/* temporary Nav*/
-
-.topnav {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  height: 83.84px;
-}
-
-.sidenav{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 118px;
-  background-color: #333;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  position: fixed;
-}
 
 .parent{
     display: grid;
@@ -134,6 +113,10 @@ p {
     border-color: rgb(59,89,152);
     filter: drop-shadow(0px 4px 4px rgba(234, 30, 177, 0.25));
 }
+
+.button_move{
+        text-align: right;
+    }
 
 /*Feed CSS starts here*/
 

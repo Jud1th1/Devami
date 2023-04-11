@@ -12,24 +12,44 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/8bc929afbc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="patience.css">
     <link rel="stylesheet" href="home.css">
+    
     <title>Profile</title>
     <link rel="icon" href="">
 </head>
 <body>
     
-    <!--Placeholder NavBars (TO BE REPLACED/DELETED LATER!!!!)-->
     <header>
-        <div class="topnav">
-            <ul>
-                <li></li>
-            </ul>
-        </div>
-        <div class="sidenav">
-            <ul>
-                <li></li>
-              </ul>
-        </div>
+    
+      <div class="topnav" id="myTopnav">
+        <a href="#"><input type="search"></a>
+        <a href="profile-post.html" class="split"><img src="Images/Tiffany.png" alt="" class="avatar">
+        <a href="#" class="split"><h2 class="message">Messages</h2></a>
+        <a href="home.html" class="split"><h2>DEVAMI</h2></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <div class="sidebar">
+        <img src="img/devami-logo.png" alt="Devami Logo" class="dev_logo">
+        <a href="#"><img src="/Images/events-icon.png" class="icons"></a>
+        <a href="#"><img src="/Images/group-icon.png" class="icons"></a>
+        <a href="#"><img src="/Images/info-icon.png" class="icons"></a>
+        <a href="#"><img src="/Images/mentorship-icon.png" class="icons"></a>
+        <a href="#"><img src="/Images/phone-iconf3dicon.png" class="icons"></a>
+        <a href="#"><img src="/Images/shopping-iconf3dicon.png" class="icons"></a>
+      </div>
+
+      <div class="bottombar">
+        <a href="#"><img src="/Images/events-icon.png" class="icons_b"></a>
+        <a href="#"><img src="/Images/group-icon.png" class="icons_b"></a>
+        <a href="#"><img src="/Images/info-icon.png" class="icons_b"></a>
+        <a href="#"><img src="/Images/mentorship-icon.png" class="icons_b"></a>
+        <a href="#"><img src="/Images/phone-iconf3dicon.png" class="icons_b"></a>
+        <a href="#"><img src="/Images/shopping-iconf3dicon.png" class="icons_b"></a>
+      </div>
     </header>
 
     <main class="parent">
@@ -51,7 +71,6 @@
 
     <!--Left Side container-->
     <section class="right_container">
-
       <div class="welcome_title">
         <h1 class="p-2">What's on Dev today?</h1>
         <div class="dropdown">
@@ -70,7 +89,7 @@
         <div class="feed_card user1">
             <div class="user">
             <div>
-              <img src="images/barbsmith.png" alt="Image of barb smith">
+              <img src="Images/barbsmith.png" alt="Image of barb smith">
             </div>
             <div class="m-3">
               <h2>Barb Smith</h2>
@@ -102,7 +121,7 @@
           <div class="feed_card user2">
             <div class="user">
             <div>
-              <img src="images/annerice.png" alt="Image of anne rice">
+              <img src="Images/annerice.png" alt="Image of anne rice">
             </div>
             <div class="m-3">
               <h2>Anne Rice</h2>
@@ -134,7 +153,7 @@
           <div class="feed_card user3">
             <div class="user">
             <div>
-              <img src="images/Alexbing.png" alt="Image of alex bing">
+              <img src="Images/Alexbing.png" alt="Image of alex bing">
             </div>
             <div class="m-3">
               <h2>Alex Bing</h2>
@@ -166,7 +185,7 @@
           <div class="feed_card user4">
             <div class="user">
             <div>
-              <img src="images/mariencruz.png" alt="Image of marie n cruz">
+              <img src="Images/mariencruz.png" alt="Image of marie n cruz">
             </div>
             <div class="m-3">
               <h2>Marie N. Cruz</h2>
@@ -198,7 +217,7 @@
           <div class="feed_card user5">
             <div class="user">
             <div>
-              <img src="images/alexromanoff.png" alt="Image of alex romanoff">
+              <img src="Images/alexromanoff.png" alt="Image of alex romanoff">
             </div>
             <div class="m-3">
               <h2>Alex Romanoff</h2>
@@ -229,7 +248,7 @@
           <div class="feed_card user6">
             <div class="user">
             <div>
-              <img src="images/jordanphilliips.png" alt="Image of jordan phillips">
+              <img src="Images/jordanphilliips.png" alt="Image of jordan phillips">
             </div>
             <div class="m-3">
               <h2>Jordan Phillips</h2>
@@ -264,6 +283,15 @@
         </main>
 
 <script>
+  /*Script*/
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
   /*Date & Time*/
   function showDateTime() {
