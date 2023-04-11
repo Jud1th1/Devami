@@ -376,7 +376,8 @@ p {
         grid-template-rows: repeat(auto, 1fr);
         margin: 5%;
         justify-content: center;
-    }
+    } 
+     
 }
 
     @media screen and (max-width:600px){
