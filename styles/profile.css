@@ -397,45 +397,16 @@ p {
     .item2 {
      padding-left: 220px;
      width:150px;
-    } /* marian MQ 800px */
+  }
 
-    .grid-container {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-          /* marian MQ 600px */
-
-        .grid-container {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          margin: 0;
-        }
-        .projects {
-          display: unset;
-        }
-        h2.project-title {
-          font: size 28px;
-          width: 500px;
-        }
-        .item2 {
-          padding-left:80px;
-          width:65px;
-      }            .projects {
-    display: unset;
-}
-
-    .item2{
-      grid-column: 1/2;
-    }
-     .item1{
-      grid-column: 1/2;
-     }
-  }*/
-<<<<<<< HEAD
-=======
+  /* media querie 600px */
+  
   @media screen and (max-width: 600px) {
+
+    .container {
+      margin: 5%;
+    }
+    /* marian MQ 600px */
     .grid-container {
       display: flex;
       flex-direction: column;
@@ -453,53 +424,3 @@ p {
       width:65px;
     }
   }
-  @media screen and (max-width: 900px) {
->>>>>>> 1248006e8915fc18e3e578a49efc4610d809747f
-    .grid-container {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-    .projects {
-      display: unset;
-    }
-    h2.project-title {
-      font: size 28px;
-      width: 800px;
-    }
-    .item2 {
-     padding-left: 220px;
-     width:150px;
-    }
-<<<<<<< HEAD
-}
-
-
-
-
-    @media screen and (max-width:600px){
-        
-        
-        /*Marian Media query*/
-        .grid-container {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-        }
-        .projects {
-          display: unset;
-        }
-        h2.project-title {
-          font: size 28px;
-          width: 500px;
-        }
-        .item2 {
-          padding-left:80px;
-          width:65px;
-        }
-        }
-
-=======
-  }
->>>>>>> 1248006e8915fc18e3e578a49efc4610d809747f
->>>>>>> 7ae1d6901697e01f1e9f3b63d0a1c43c6ec4947b
