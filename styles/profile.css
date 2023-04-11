@@ -380,6 +380,25 @@ p {
         grid-template-rows: repeat(auto, 1fr);
         justify-content: center;
     } 
+
+    /* marian MQ 800px */
+
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .projects {
+      display: unset;
+    }
+    h2.project-title {
+      font: size 28px;
+      width: 800px;
+    }
+    .item2 {
+     padding-left: 220px;
+     width:150px;
+    }
      
 <<<<<<< HEAD
     /*Marian query*/
@@ -389,6 +408,29 @@ p {
     @media screen and (max-width:600px){
         .container{
             margin: 5%;
+        }
+        .container2{
+         margin: 0;
+      } 
+
+        /* marian MQ 600px */
+
+        .grid-container {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin: 0;
+        }
+        .projects {
+          display: unset;
+        }
+        h2.project-title {
+          font: size 28px;
+          width: 500px;
+        }
+        .item2 {
+          padding-left:80px;
+          width:65px;
         }
     }
 
@@ -413,6 +455,8 @@ p {
       grid-column: 1/2;
      }
   }*/
+<<<<<<< HEAD
+=======
   @media screen and (max-width: 600px) {
     .grid-container {
       display: flex;
@@ -480,3 +524,4 @@ p {
 =======
   }
 >>>>>>> 1248006e8915fc18e3e578a49efc4610d809747f
+>>>>>>> 7ae1d6901697e01f1e9f3b63d0a1c43c6ec4947b
