@@ -7,38 +7,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8bc929afbc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="patience.css">
+    <link rel="stylesheet" href="genesis2.css">
     <title>Profile</title>
     <link rel="icon" href="">
 </head>
 <body>
     
-    <!--Placeholder NavBars (TO BE REPLACED/DELETED LATER!!!!)-->
     <header>
-        <div class="topnav">
-            <ul>
-                <li></li>
-            </ul>
+    
+        <div class="topnav" id="myTopnav">
+          <a href="#"><input type="search"></a>
+          <a href="profile-post.html" class="split"><img src="Images/Tiffany.png" alt="" class="avatar">
+          <a href="#" class="split"><h2 class="message">Messages</h2></a>
+          <a href="home.html" class="split"><h2>DEVAMI</h2></a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
-        <div class="sidenav">
-            <ul>
-                <li></li>
-              </ul>
+  
+        <div class="sidebar">
+          <img src="img/devami-logo.png" alt="Devami Logo" class="dev_logo">
+          <a href="#"><img src="/Images/events-icon.png" class="icons"></a>
+          <a href="#"><img src="/Images/group-icon.png" class="icons"></a>
+          <a href="#"><img src="/Images/info-icon.png" class="icons"></a>
+          <a href="#"><img src="/Images/mentorship-icon.png" class="icons"></a>
+          <a href="#"><img src="/Images/phone-iconf3dicon.png" class="icons"></a>
+          <a href="#"><img src="/Images/shopping-iconf3dicon.png" class="icons"></a>
         </div>
-    </header>
+  
+        <div class="bottombar">
+          <a href="#"><img src="/Images/events-icon.png" class="icons_b"></a>
+          <a href="#"><img src="/Images/group-icon.png" class="icons_b"></a>
+          <a href="#"><img src="/Images/info-icon.png" class="icons_b"></a>
+          <a href="#"><img src="/Images/mentorship-icon.png" class="icons_b"></a>
+          <a href="#"><img src="/Images/phone-iconf3dicon.png" class="icons_b"></a>
+          <a href="#"><img src="/Images/shopping-iconf3dicon.png" class="icons_b"></a>
+        </div>
+      </header>
 
 
     <div class="container">
         <div class="profile_area">
             <h1>Tiffany Francois</h1>
-            <img src="Images/Tiffany.png" alt="profile_img" class="w-50 rounded-circle">
+            <img src="Images/Tiffany.png" alt="profile_img" class="tiffany_profilepic">
            <div class="icon_buttons">
-            <a href="#" class="link-secondary p-2"><i class="fa-solid fa-heart fa-xl"></i></a>
-            <a href="#" class="link-secondary p-2"><i class="fa-solid fa-message fa-xl"></i></a>
-            <a href="#" class="link-secondary p-2"><i class="fa-solid fa-wifi fa-xl"></i></a>
+            <a href="#" class="icon_buttons"><i class="fa-solid fa-heart fa-xl"></i></a>
+            <a href="#" class="icon_buttons"><i class="fa-solid fa-message fa-xl"></i></a>
+            <a href="#" class="icon_buttons"><i class="fa-solid fa-wifi fa-xl"></i></a>
            </div>
         </div>
         
@@ -51,17 +69,15 @@
         <div class="profile">
             <div class="profile_welcometxt">
                 <h2>Hello World,</h2>
-                <p>Irina here from the southern state of Georgia. Recent grad student and back-end developer.</p>
+                <p>Tiffany here from the southern state of Georgia. Recent grad student and front-end developer.</p>
             
             
             <div class="languages">
                 <h3>Languages</h3>
-                <ul class="list-group list-group-horizontal" aria-hidden="true"></i>
-                <li class="list-group-item border border-secondary rounded bg-secondary text-white">Swift</li>
-                <li class="list-group-item border border-secondary rounded bg-secondary text-white">TypeScript</li>
-                <li class="list-group-item border border-secondary rounded bg-secondary text-white">C++</li>
-                <li class="list-group-item border border-secondary rounded bg-secondary text-white">#C</li>
-                </ul>
+                <button class="lang_button">Swift</button>
+                <button class="lang_button">TypeScript</button>
+                <button class="lang_button">C++</button>
+                <button class="lang_button">#C</button>
             </div>
         </div>
         </div>
@@ -69,7 +85,7 @@
        
         <div class="topics">
             <h2>Liked Topics</h2>
-            <button class="liked_topicsbtn" onclick="myFunction()">#MichiganTechGirls</button>
+            <button class="liked_topicsbtn" onclick="myFunction()">#GeorgiaTechGirls</button>
             <button class="liked_topicsbtn" onclick="myFunction()">#UX</button>
             <button class="liked_topicsbtn" onclick="myFunction()">#backEndDevelopment</button>
             <button class="liked_topicsbtn" onclick="myFunction()">#NewDev</button>
@@ -85,6 +101,13 @@
         </div>
         
     </div>
+
+    <div class="container">
+        <img src="https://files.slack.com/files-pri/TA0PFPDC2-F052657B72T/post2.png" alt="">
+        <img src="https://files.slack.com/files-pri/TA0PFPDC2-F052657E9F1/post3.png" alt="">
+        <img src="https://files.slack.com/files-pri/TA0PFPDC2-F052HNL3MGV/post1.png" alt="">
+    </div>
+    
 
 <!-- Bootstrap JavaScript Libraries -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
