@@ -311,7 +311,7 @@ p {
     color: #25282d;
   }
   
-  h2 {
+  .item2 h2 {
     font-weight: 600;
     font-size: 29px;
   }
@@ -342,7 +342,7 @@ p {
     width: 250px;
   }
   
-  p {
+  .visual p {
     width: 232px;
     height: 28px;
     font-family: "Poppins";
