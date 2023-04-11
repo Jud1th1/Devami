@@ -371,13 +371,13 @@ p {
         .text_wall { grid-area: 4 / 1 / 5 / 2; }
         .squad { grid-area: 5 / 1 / 6 / 2; }
     
-    
     .container2{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(auto, 1fr);
         margin: 5%;
         justify-content: center;
-    }
+    } 
+     
 }
 
     @media screen and (max-width:600px){
