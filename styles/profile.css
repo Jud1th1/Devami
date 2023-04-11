@@ -280,13 +280,13 @@ p {
   }
   
   .project-A {
-    background-image:
+    background-image: url("/Images/Login\ Page.png");
     background-size: cover;
     height: 350px;
   }
   
   .project-B {
-    background-image: 
+    background-image:  url("/Images/Welcome\ Page.png");
     background-size: cover;
     height: 350px;
   }
