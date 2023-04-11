@@ -210,7 +210,7 @@ p {
 }
 
 .article_image{
-    background-image: url(Images/fatigue.png);
+    background-image: url("/Images/fatigue.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 250px;
@@ -229,7 +229,7 @@ p {
 }
 
 .article_image2{
-    background-image: url(Images/ChatGPT_article.png);
+    background-image: url("/Images/ChatGPT_article.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 250px;
