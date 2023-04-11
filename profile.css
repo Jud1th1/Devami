@@ -145,7 +145,7 @@ p {
 }
 
 .lang_button{
-    
+
 }
 
 
@@ -202,6 +202,24 @@ p {
     transform: scale(1.2);
     border: 2px solid var(--tropical-indigo);
 }
+
+
+
+/*CSS FOR PROFILE CONTAINER2 STARTS HERE*/
+
+.container2 {
+    background-color: var(--seasalt);
+    border: solid 2px var(--cool-gray);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    margin-left: 138px;
+    margin-top: 15px;
+    max-width: fit-content;
+
+    display: flex;
+    padding: 1em;
+}
+
+
 
 
 /* Media Query*/
