@@ -145,7 +145,10 @@ p {
 }
 
 .lang_button{
-
+    border-radius: 5px;
+    border: 1px solid var(--cool-gray);
+    padding: 2%;
+    margin: 4px;
 }
 
 
