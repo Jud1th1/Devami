@@ -12,46 +12,44 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/8bc929afbc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="patience.css">
     <link rel="stylesheet" href="home.css">
+    
     <title>Profile</title>
     <link rel="icon" href="">
 </head>
 <body>
     
-    <!--Placeholder NavBars (TO BE REPLACED/DELETED LATER!!!!)-->
     <header>
-      <div class="topnav">
-        <strong><a href="#home">Devami</a></strong>
-        <a href="#news">Messages</a>
-        <div class="search"><input type="text" placeholder="Search"></div>
-      </div>
     
-      <nav class="side-nav" class="nav-item">
-        <ul>
-          
-          <li>
-            <img src="logo.devami.png" class="logo">
-          </li>
-          <li>
-            <li><a href="#"></a></li>
-            <img src="alexromanoff.jpg" class="avatar">
-          </li>
-          <li><a href="#"></a></li>
-           <img src="events-icon.png">
-          <li><a href="#"></a></li>
-           <img src="group-icon.png">
-          <li><a href="#"></a></li>
-           <img src="info-icon.png">
-          <li><a href="#"></a></li>
-           <img src="Live-icon.png">
-          <li><a href="#"></a></li>
-           <img src="mentorship-icon.png">
-          <li><a href="#"></a></li>
-           <img src="phone-iconf3dicon.png">
-          <li><a href="#"></a></li>
-           <img src="shopping-iconf3dicon.png">
-        </ul>
-      </nav>
+      <div class="topnav" id="myTopnav">
+        <a href="#"><input type="search"></a>
+        <a href="profile-post.html" class="split"><img src="Images/Tiffany.png" alt="" class="avatar">
+        <a href="#" class="split"><h2 class="message">Messages</h2></a>
+        <a href="home.html" class="split"><h2>DEVAMI</h2></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <div class="sidebar">
+        <img src="img/devami-logo.png" alt="Devami Logo" class="dev_logo">
+        <a href="#"><img src="/Images/events-icon.png" class="icons"></a>
+        <a href="#"><img src="/Images/group-icon.png" class="icons"></a>
+        <a href="#"><img src="/Images/info-icon.png" class="icons"></a>
+        <a href="#"><img src="/Images/mentorship-icon.png" class="icons"></a>
+        <a href="#"><img src="/Images/phone-iconf3dicon.png" class="icons"></a>
+        <a href="#"><img src="/Images/shopping-iconf3dicon.png" class="icons"></a>
+      </div>
+
+      <div class="bottombar">
+        <a href="#"><img src="/Images/events-icon.png" class="icons_b"></a>
+        <a href="#"><img src="/Images/group-icon.png" class="icons_b"></a>
+        <a href="#"><img src="/Images/info-icon.png" class="icons_b"></a>
+        <a href="#"><img src="/Images/mentorship-icon.png" class="icons_b"></a>
+        <a href="#"><img src="/Images/phone-iconf3dicon.png" class="icons_b"></a>
+        <a href="#"><img src="/Images/shopping-iconf3dicon.png" class="icons_b"></a>
+      </div>
     </header>
 
     <main class="parent">
@@ -73,7 +71,6 @@
 
     <!--Left Side container-->
     <section class="right_container">
-
       <div class="welcome_title">
         <h1 class="p-2">What's on Dev today?</h1>
         <div class="dropdown">
@@ -286,6 +283,15 @@
         </main>
 
 <script>
+  /*Script*/
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
   /*Date & Time*/
   function showDateTime() {
