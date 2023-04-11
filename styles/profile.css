@@ -375,17 +375,22 @@ p {
         .text_wall { grid-area: 4 / 1 / 5 / 2; }
         .squad { grid-area: 5 / 1 / 6 / 2; }
     
-    .container2{
+    .container2 {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(auto, 1fr);
         justify-content: center;
+        width: 80%;
     } 
+
+    /* .cont2_img {
+      width: 50%;
+    } */
       /* marian MQ 800px */
 
     .grid-container {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 80%;
     }
     .projects {
       display: unset;
