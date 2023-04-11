@@ -51,7 +51,7 @@ p {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
     margin-left: 138px;
     margin-top: 15px;
-    max-width: 100%;
+    max-width: fit-content;
     
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -311,7 +311,7 @@ p {
     color: #25282d;
   }
   
-  .item2 h2 {
+  h2 {
     font-weight: 600;
     font-size: 29px;
   }
@@ -342,7 +342,7 @@ p {
     width: 250px;
   }
   
-  .visual p {
+  p {
     width: 232px;
     height: 28px;
     font-family: "Poppins";
@@ -381,7 +381,58 @@ p {
         justify-content: center;
     } 
      
+<<<<<<< HEAD
     /*Marian query*/
+=======
+}
+
+    @media screen and (max-width:600px){
+        .container{
+            margin: 5%;
+        }
+    }
+
+
+
+
+    /*@media only screen and (max-width: 600px) {
+    .responsive {
+      width: 100%;
+    }
+    .grid-container{
+     grid-template-columns: auto ;
+     grid-template-rows: auto auto;
+    }
+    .projects{
+      grid-template-columns: auto;
+    }
+    .item2{
+      grid-column: 1/2;
+    }
+     .item1{
+      grid-column: 1/2;
+     }
+  }*/
+  @media screen and (max-width: 600px) {
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .projects {
+      display: unset;
+    }
+    h2.project-title {
+      font: size 28px;
+      width: 500px;
+    }
+    .item2 {
+      padding-left:80px;
+      width:65px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+>>>>>>> 1248006e8915fc18e3e578a49efc4610d809747f
     .grid-container {
       display: flex;
       flex-direction: column;
@@ -398,6 +449,7 @@ p {
      padding-left: 220px;
      width:150px;
     }
+<<<<<<< HEAD
 }
 
 
@@ -427,3 +479,6 @@ p {
         }
         }
 
+=======
+  }
+>>>>>>> 1248006e8915fc18e3e578a49efc4610d809747f
