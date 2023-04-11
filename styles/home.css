@@ -304,4 +304,14 @@ p {
     .feed_buttons{
         text-align: center;
     }
+
+    .article_image{
+        background-image: url("/Images/Fatiguemobile.png");
+    }
+
+    .article_image2{
+        background-color: url("/Images/");
+    }
 }
+
+
