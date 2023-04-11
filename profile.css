@@ -229,8 +229,126 @@ p {
     width: 100%;
 }
     
-    
-
+ /*Marian's CSS*/   
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: space-between;
+    /*width: 1240px;
+    height: 515px;*/
+    background: #f8f9fa;
+    border: 2px solid #919191;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+  
+  .item1 {
+    /*display:grid;*/
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    row-gap: 20px;
+  }
+  
+  .projects {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 616px;
+    height: 418px;
+    background: #d9d9d9;
+    margin: 10px;
+    padding-top: 10px;
+  }
+  .project-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+  }
+  
+  .project {
+    margin: 10px;
+    padding-top: 10px;
+    width: 208px;
+    height: 320px;
+  }
+  
+  .project-A {
+    background-image: url("images/My\ project\ \(1\).png");
+    background-size: cover;
+    height: 350px;
+  }
+  
+  .project-B {
+    background-image: url("images/My\ project\ \(2\).png");
+    background-size: cover;
+    height: 350px;
+  }
+  
+  .item2 {
+    width: 50%;
+    text-align: center;
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  
+  .project-title {
+    display: flex;
+    justify-content: center;
+    width: 606px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    color: #25282d;
+  }
+  
+  h2 {
+    font-weight: 600;
+    font-size: 29px;
+  }
+  
+  button {
+    margin: 20px;
+    width: 155px;
+    height: 37px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: linear-gradient(90deg, #0084ff 17.54%, #a89bfe 85.07%);
+    border-radius: 15px;
+    border: none;
+  }
+  
+  .Mentor-image {
+    align-items: center;
+    width: 125px;
+    height: 127px;
+    border-radius: 73px;
+  }
+  
+  .visual {
+    margin: 20px 20px;
+    background: #f8f9fa;
+    border: 2px solid #d5e2dc;
+    border-radius: 5px;
+    height: 150px;
+    width: 250px;
+  }
+  
+  p {
+    width: 232px;
+    height: 28px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    margin: 5px;
+    text-align: center;
+    color: #25282d;
+  }
+  
+  
 
 
 /* Media Query*/
@@ -249,7 +367,7 @@ p {
         .topics { grid-area: 3 / 1 / 4 / 2; }
         .text_wall { grid-area: 4 / 1 / 5 / 2; }
         .squad { grid-area: 5 / 1 / 6 / 2; }
-        } 
+    
     
     .container2{
         grid-template-columns: 1fr;
@@ -257,10 +375,74 @@ p {
         margin: 5%;
         justify-content: center;
     }
-
+}
 
     @media screen and (max-width:600px){
         .container{
             margin: 5%;
         }
     }
+
+
+
+
+    /*@media only screen and (max-width: 600px) {
+    .responsive {
+      width: 100%;
+    }
+    .grid-container{
+     grid-template-columns: auto ;
+     grid-template-rows: auto auto;
+    }
+    .projects{
+      grid-template-columns: auto;
+    }
+    .item2{
+      grid-column: 1/2;
+    }
+     .item1{
+      grid-column: 1/2;
+     }
+  }*/
+  @media only screen and (max-width: 600px) {
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+    }
+    .projects {
+      display: unset;
+    }
+    h2.project-title {
+      font: size 28px;
+      width: 500px;
+    }
+    .item2 {
+      padding-left:80px;
+      width:65px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      width: 810px;
+    }
+    .projects {
+      display: unset;
+    }
+    h2.project-title {
+      font: size 28px;
+      width: 800px;
+    }
+    .item2 {
+     padding-left: 220px;
+     width:150px;
+    }
+  }
+  
+  Footer
+  © 2023 GitHub, Inc.
+  Footer navigation
+  Terms
+  Privacy
