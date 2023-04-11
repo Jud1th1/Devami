@@ -280,13 +280,13 @@ p {
   }
   
   .project-A {
-    background-image: url("images/My\ project\ \(1\).png");
+    background-image: 
     background-size: cover;
     height: 350px;
   }
   
   .project-B {
-    background-image: url("images/My\ project\ \(2\).png");
+    background-image: 
     background-size: cover;
     height: 350px;
   }
@@ -359,7 +359,7 @@ p {
 
 
 /* Media Query*/
-    @media screen and (max-width:1000px){
+    @media screen and (max-width:800px){
         .sidenav {display: none;}
 
         .container{
@@ -381,54 +381,7 @@ p {
         justify-content: center;
     } 
      
-}
-
-    @media screen and (max-width:600px){
-        .container{
-            margin: 5%;
-        }
-    }
-
-
-
-
-    /*@media only screen and (max-width: 600px) {
-    .responsive {
-      width: 100%;
-    }
-    .grid-container{
-     grid-template-columns: auto ;
-     grid-template-rows: auto auto;
-    }
-    .projects{
-      grid-template-columns: auto;
-    }
-    .item2{
-      grid-column: 1/2;
-    }
-     .item1{
-      grid-column: 1/2;
-     }
-  }*/
-  @media only screen and (max-width: 600px) {
-    .grid-container {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-    .projects {
-      display: unset;
-    }
-    h2.project-title {
-      font: size 28px;
-      width: 500px;
-    }
-    .item2 {
-      padding-left:80px;
-      width:65px;
-    }
-  }
-  @media only screen and (max-width: 900px) {
+    /*Marian query*/
     .grid-container {
       display: flex;
       flex-direction: column;
@@ -445,5 +398,32 @@ p {
      padding-left: 220px;
      width:150px;
     }
-  }
-  
+}
+
+
+
+
+    @media screen and (max-width:600px){
+        .container{
+            margin: 5%;
+        }
+        
+        /*Marian Media query*/
+        .grid-container {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+        .projects {
+          display: unset;
+        }
+        h2.project-title {
+          font: size 28px;
+          width: 500px;
+        }
+        .item2 {
+          padding-left:80px;
+          width:65px;
+        }
+        }
+
