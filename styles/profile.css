@@ -139,6 +139,10 @@ p {
     justify-content: center;
 }
 
+.languages{
+  padding: 1em;
+}
+
 .lang_list{
     display: flex;
     justify-content: center;
@@ -374,7 +378,6 @@ p {
     .container2{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(auto, 1fr);
-        margin: 5%;
         justify-content: center;
     } 
      
@@ -411,7 +414,7 @@ p {
     .grid-container {
       display: flex;
       flex-direction: column;
-      width: 500px;
+      width: 100%;
     }
     .projects {
       display: unset;
@@ -429,7 +432,7 @@ p {
     .grid-container {
       display: flex;
       flex-direction: column;
-      width: 810px;
+      width: 100%;
     }
     .projects {
       display: unset;
