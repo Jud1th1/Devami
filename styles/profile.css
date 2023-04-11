@@ -456,9 +456,7 @@ p {
 
 
     @media screen and (max-width:600px){
-        .container{
-            margin: 5%;
-        }
+        
         
         /*Marian Media query*/
         .grid-container {
